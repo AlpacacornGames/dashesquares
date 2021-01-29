@@ -28,38 +28,6 @@
 </head>
 <body>
   
-    <div id="xl_auth" style="width: 100%; height: 1000px"></div>
-        
-   <script type="application/javascript">
-      const s = document.createElement("script");
-      s.type = "text/javascript";
-      s.async = true;
-      s.src = "https://login-sdk.xsolla.com/latest/";
-      const head = document.getElementsByTagName("head")[0];
-      head.appendChild(s);
-      let xl;
-
-      s.addEventListener("load", function() {
-        xl = new XsollaLogin.Widget({
-          projectId: "acc28dfb-6231-11eb-b13e-42010aa80004",
-          callbackUrl: "https://login.xsolla.com/api/blank",
-          preferredLocale: "en_XX"
-        });
-
-        xl.mount("xl_auth");
-        
-        xl.on(xl.events.Close, () => {
-          xl.close();
-        });
-      });
-      
-      
-        function openWidget() {
-          xl.open();
-        } 
-      
-   </script>
-  
   <section class="menu cid-snujP0nL46" once="menu" id="menu1-0">
 
     
@@ -86,7 +54,7 @@
         </div>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             
-            <div class="navbar-buttons mbr-section-btn"><a class="btn btn-sm btn-primary display-4" onclick="xl.open()"><span class="mobi-mbri mobi-mbri-user mbr-iconfont mbr-iconfont-btn"></span>
+            <div class="navbar-buttons mbr-section-btn"><a class="btn btn-sm btn-primary display-4" href="alpacaccount.html"><span class="mobi-mbri mobi-mbri-user mbr-iconfont mbr-iconfont-btn"></span>
                     
                     AlpacaAccount</a></div>
         </div>
